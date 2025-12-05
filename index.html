@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeere Restaurant - Experience authentic flavors and exceptional dining">
+    <title>Jeere Restaurant | Authentic Cuisine & Fine Dining</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <link rel="shortcut icon" type="image/jpeg" href="logo.jpeg">
+    <link rel="apple-touch-icon" href="logo.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="Jeere Restaurant Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="reserve-btn">Reserve Table</button>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section id="home" class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&h=1080&fit=crop')">
+                </div>
+                <div class="slide-content">
+                    <h1 class="slide-title" data-animation="fade-up">Welcome to Jeere</h1>
+                    <p class="slide-subtitle" data-animation="fade-up-delay">Experience the art of fine dining</p>
+                    <a href="#menu" class="slide-btn" data-animation="fade-up-delay-2">Explore Menu</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=1080&fit=crop')">
+                </div>
+                <div class="slide-content">
+                    <h1 class="slide-title" data-animation="fade-up">Authentic Flavors</h1>
+                    <p class="slide-subtitle" data-animation="fade-up-delay">Crafted with passion and tradition</p>
+                    <a href="#about" class="slide-btn" data-animation="fade-up-delay-2">Our Story</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1920&h=1080&fit=crop')">
+                </div>
+                <div class="slide-content">
+                    <h1 class="slide-title" data-animation="fade-up">Reserve Your Table</h1>
+                    <p class="slide-subtitle" data-animation="fade-up-delay">Create unforgettable moments with us</p>
+                    <a href="#contact" class="slide-btn" data-animation="fade-up-delay-2">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-control prev" id="prevSlide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button class="slider-control next" id="nextSlide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <!-- Slider Indicators -->
+        <div class="slider-indicators" id="sliderIndicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text scroll-reveal">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">Where Tradition Meets Excellence</h2>
+                    <p class="about-description">
+                        For over two decades, Jeere has been a cornerstone of culinary excellence,
+                        bringing together authentic flavors and contemporary dining experiences.
+                        Our passion for quality ingredients and time-honored recipes creates
+                        memorable moments for every guest.
+                    </p>
+                    <p class="about-description">
+                        From our carefully curated menu to our warm ambiance, every detail is
+                        designed to transport you to a world of exceptional taste and hospitality.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">🍽️</div>
+                            <div class="feature-text">
+                                <h4>Premium Quality</h4>
+                                <p>Fresh, locally-sourced ingredients</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">👨‍🍳</div>
+                            <div class="feature-text">
+                                <h4>Expert Chefs</h4>
+                                <p>Award-winning culinary team</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✨</div>
+                            <div class="feature-text">
+                                <h4>Perfect Ambiance</h4>
+                                <p>Elegant & comfortable setting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=1000&fit=crop"
+                        alt="Restaurant Interior">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-label">Our Menu</span>
+                <h2 class="section-title">Culinary Delights</h2>
+                <p class="section-subtitle">Discover our carefully crafted selection of dishes</p>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-tabs scroll-reveal">
+                <button class="menu-tab active" data-category="appetizers">Appetizers</button>
+                <button class="menu-tab" data-category="mains">Main Course</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="beverages">Beverages</button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="menu-content">
+                <!-- Appetizers -->
+                <div class="menu-category active" data-category="appetizers">
+                    <div class="menu-grid">
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=500&h=400&fit=crop"
+                                    alt="Spring Rolls">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Crispy Spring Rolls</h3>
+                                    <span class="menu-price">$12</span>
+                                </div>
+                                <p class="menu-description">Fresh vegetables wrapped in crispy pastry, served with sweet
+                                    chili sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=500&h=400&fit=crop"
+                                    alt="Bruschetta">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Classic Bruschetta</h3>
+                                    <span class="menu-price">$10</span>
+                                </div>
+                                <p class="menu-description">Toasted bread topped with fresh tomatoes, basil, and olive
+                                    oil</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=400&fit=crop"
+                                    alt="Soup">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Creamy Tomato Soup</h3>
+                                    <span class="menu-price">$8</span>
+                                </div>
+                                <p class="menu-description">Rich tomato soup with fresh herbs and cream</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1619888447193-a4f4dc42fca6?w=500&h=400&fit=crop"
+                                    alt="Calamari">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Fried Calamari</h3>
+                                    <span class="menu-price">$15</span>
+                                </div>
+                                <p class="menu-description">Tender calamari rings, lightly battered and served with
+                                    aioli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-category" data-category="mains">
+                    <div class="menu-grid">
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500&h=400&fit=crop"
+                                    alt="Grilled Steak">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Premium Grilled Steak</h3>
+                                    <span class="menu-price">$32</span>
+                                </div>
+                                <p class="menu-description">Prime beef grilled to perfection, served with seasonal
+                                    vegetables</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1611599539912-1ed39c2fbc32?w=500&h=400&fit=crop"
+                                    alt="Salmon">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Pan-Seared Salmon</h3>
+                                    <span class="menu-price">$28</span>
+                                </div>
+                                <p class="menu-description">Fresh Atlantic salmon with lemon butter sauce and asparagus
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=400&fit=crop"
+                                    alt="Pasta">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Truffle Mushroom Pasta</h3>
+                                    <span class="menu-price">$24</span>
+                                </div>
+                                <p class="menu-description">Homemade pasta with wild mushrooms and truffle oil</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&h=400&fit=crop"
+                                    alt="Chicken">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Herb Roasted Chicken</h3>
+                                    <span class="menu-price">$22</span>
+                                </div>
+                                <p class="menu-description">Tender chicken breast with rosemary and garlic, served with
+                                    mashed potatoes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category" data-category="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&h=400&fit=crop"
+                                    alt="Chocolate Cake">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Molten Chocolate Cake</h3>
+                                    <span class="menu-price">$12</span>
+                                </div>
+                                <p class="menu-description">Warm chocolate cake with a gooey center, served with vanilla
+                                    ice cream</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&h=400&fit=crop"
+                                    alt="Tiramisu">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Classic Tiramisu</h3>
+                                    <span class="menu-price">$10</span>
+                                </div>
+                                <p class="menu-description">Traditional Italian dessert with coffee-soaked ladyfingers
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&h=400&fit=crop"
+                                    alt="Cheesecake">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>New York Cheesecake</h3>
+                                    <span class="menu-price">$11</span>
+                                </div>
+                                <p class="menu-description">Creamy cheesecake with berry compote</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1587241321921-91a834d82ffc?w=500&h=400&fit=crop"
+                                    alt="Ice Cream">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Artisan Gelato</h3>
+                                    <span class="menu-price">$8</span>
+                                </div>
+                                <p class="menu-description">Selection of house-made gelato flavors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-category" data-category="beverages">
+                    <div class="menu-grid">
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=500&h=400&fit=crop"
+                                    alt="Coffee">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Espresso & Coffee</h3>
+                                    <span class="menu-price">$5</span>
+                                </div>
+                                <p class="menu-description">Freshly brewed coffee from premium beans</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500&h=400&fit=crop"
+                                    alt="Smoothie">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Fresh Fruit Smoothies</h3>
+                                    <span class="menu-price">$7</span>
+                                </div>
+                                <p class="menu-description">Seasonal fruit blended to perfection</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1582106245687-0104d8e6c257?w=500&h=400&fit=crop"
+                                    alt="Wine">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Fine Wines</h3>
+                                    <span class="menu-price">$12+</span>
+                                </div>
+                                <p class="menu-description">Curated selection of red, white, and rosé wines</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item scroll-reveal">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=500&h=400&fit=crop"
+                                    alt="Cocktail">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h3>Signature Cocktails</h3>
+                                    <span class="menu-price">$14</span>
+                                </div>
+                                <p class="menu-description">Handcrafted cocktails by our mixologists</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-label">Gallery</span>
+                <h2 class="section-title">Visual Feast</h2>
+                <p class="section-subtitle">A glimpse into our culinary artistry</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&h=600&fit=crop"
+                        alt="Dish 1">
+                    <div class="gallery-overlay">
+                        <span>Fine Dining</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&h=600&fit=crop"
+                        alt="Dish 2">
+                    <div class="gallery-overlay">
+                        <span>Exquisite Tastes</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&h=600&fit=crop"
+                        alt="Dish 3">
+                    <div class="gallery-overlay">
+                        <span>Fresh Ingredients</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop"
+                        alt="Dish 4">
+                    <div class="gallery-overlay">
+                        <span>Culinary Art</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&h=600&fit=crop"
+                        alt="Dish 5">
+                    <div class="gallery-overlay">
+                        <span>Perfect Presentation</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=600&fit=crop"
+                        alt="Dish 6">
+                    <div class="gallery-overlay">
+                        <span>Signature Dishes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-label">Contact Us</span>
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p class="section-subtitle">We look forward to serving you</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-wrapper scroll-reveal">
+                    <form class="contact-form" id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Number of Guests" min="1" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests (Optional)" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Book Table</button>
+                    </form>
+                </div>
+
+                <div class="contact-info scroll-reveal">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h4>Address</h4>
+                        <p>123 Gourmet Street<br>Culinary District, CD 12345</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕒</div>
+                        <h4>Hours</h4>
+                        <p>Mon-Fri: 11:00 AM - 11:00 PM<br>Sat-Sun: 10:00 AM - 12:00 AM</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h4>Email</h4>
+                        <p>info@jeererestaurant.com<br>reservations@jeererestaurant.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.jpeg" alt="Jeere Logo" class="footer-logo">
+                    <p>Experience the art of fine dining</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jeere Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
