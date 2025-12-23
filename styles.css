@@ -27,6 +27,51 @@
     --transition-fast: all 0.2s ease;
 }
 
+/* Dark Mode Variables */
+body.dark-mode {
+    --white: #1A1A1A;
+    --off-white: #2D2D2D;
+    --cream: #252525;
+    --dark: #FFFFFF;
+    --dark-gray: #E5E5E5;
+    --medium-gray: #A0A0A0;
+    --light-gray: #404040;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1) rotate(15deg);
+}
+
+.sun-icon {
+    display: none;
+}
+
+.moon-icon {
+    display: block;
+}
+
+body.dark-mode .sun-icon {
+    display: block;
+}
+
+body.dark-mode .moon-icon {
+    display: none;
+}
+
 /* ====================================
    Global Styles & Reset
    ==================================== */
