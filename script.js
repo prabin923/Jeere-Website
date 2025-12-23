@@ -11,19 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileToggle = document.getElementById('mobileToggle');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
-    const themeToggle = document.getElementById('themeToggle');
-
-    // Theme Toggle Logic
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-    }
-
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        const isDark = document.body.classList.contains('dark-mode');
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
 
     // Navbar scroll effect
     window.addEventListener('scroll', function () {
